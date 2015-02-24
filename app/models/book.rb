@@ -4,7 +4,7 @@ class Book < ActiveRecord::Base
 	has_attached_file :resource
 
 	validates_attachment_content_type :image,
-	content_type: /^image\/(png|gif|jpeg)/,
+	content_type: /^image\/(png|gif|jpeg|jpg)/,
 	message: "Only images allowed"
 
 	validates_attachment_content_type :resource,
