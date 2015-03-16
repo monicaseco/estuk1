@@ -25079,3 +25079,1053 @@ ActionView::Template::Error (undefined method `guid' for nil:NilClass):
   Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.0ms)
   Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
   Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (89.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_books_on_slug' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_books_on_slug' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_type' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+
+
+Started GET "/" for ::1 at 2015-03-13 10:10:27 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+DEPRECATION WARNING: Currently, Active Record suppresses errors raised within `after_rollback`/`after_commit` callbacks and only print them to the logs. In the next version, these errors will no longer be suppressed. Instead, the errors will propagate normally just like in other Active Record callbacks.
+
+You can opt into the new behavior and remove this warning by setting:
+
+  config.active_record.raise_in_transactional_callbacks = true
+
+ (called from <class:Book> at c:/sites/estuk/app/models/book.rb:7)
+DEPRECATION WARNING: Currently, Active Record suppresses errors raised within `after_rollback`/`after_commit` callbacks and only print them to the logs. In the next version, these errors will no longer be suppressed. Instead, the errors will propagate normally just like in other Active Record callbacks.
+
+You can opt into the new behavior and remove this warning by setting:
+
+  config.active_record.raise_in_transactional_callbacks = true
+
+ (called from <class:Book> at c:/sites/estuk/app/models/book.rb:8)
+  [1m[35mBook Load (4.0ms)[0m  SELECT  "books".* FROM "books"  ORDER BY "books"."id" DESC LIMIT 4
+  Rendered books/_book.html.erb (8.0ms)
+  Rendered pages/home.html.erb within layouts/application (48.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 2020ms (Views: 1828.1ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/_devise-cb16436538e96313bf2e8d00ada688de.css?body=1" for ::1 at 2015-03-13 10:10:29 +0100
+
+
+Started GET "/assets/books-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 10:10:29 +0100
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-3d4ac324e8c8a16c343c471da829ffcc.css?body=1" for ::1 at 2015-03-13 10:10:29 +0100
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-29d4c3f4b867338d2dee8ebd23007b32.css?body=1" for ::1 at 2015-03-13 10:10:30 +0100
+
+
+Started GET "/assets/bootstrap_and_overrides-322571ea6a70b83f2a1f403f8959c4f5.css?body=1" for ::1 at 2015-03-13 10:10:30 +0100
+
+
+Started GET "/assets/pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 10:10:30 +0100
+
+
+Started GET "/assets/application-a60f7a355a6c2982e1a070497e5622cc.css?body=1" for ::1 at 2015-03-13 10:10:30 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 10:10:30 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 10:10:30 +0100
+
+
+Started GET "/assets/twitter/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-03-13 10:10:30 +0100
+
+
+Started GET "/assets/twitter/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-03-13 10:10:30 +0100
+
+
+Started GET "/assets/twitter/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-03-13 10:10:30 +0100
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-03-13 10:10:30 +0100
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-03-13 10:10:30 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-03-13 10:10:30 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-03-13 10:10:30 +0100
+
+
+Started GET "/assets/twitter/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-03-13 10:10:30 +0100
+
+
+Started GET "/assets/twitter/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-03-13 10:10:30 +0100
+
+
+Started GET "/assets/twitter/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-03-13 10:10:30 +0100
+
+
+Started GET "/assets/twitter/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-03-13 10:10:30 +0100
+
+
+Started GET "/assets/twitter/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-03-13 10:10:30 +0100
+
+
+Started GET "/assets/twitter/bootstrap-bfd36ba45e965dc20fa69e1153274989.js?body=1" for ::1 at 2015-03-13 10:10:30 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 10:10:30 +0100
+
+
+Started GET "/assets/books-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 10:10:30 +0100
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-03-13 10:10:30 +0100
+
+
+Started GET "/assets/pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 10:10:30 +0100
+
+
+Started GET "/assets/application-6227e973a7bdc2dc64f2003ba40d9cc2.js?body=1" for ::1 at 2015-03-13 10:10:30 +0100
+
+
+Started GET "/books/first_slugged_book" for ::1 at 2015-03-13 10:10:40 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"first_slugged_book"}
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."slug" = ?  ORDER BY "books"."id" ASC LIMIT 1[0m  [["slug", "first_slugged_book"]]
+  Rendered books/show.html.erb within layouts/application (31.3ms)
+Completed 500 Internal Server Error in 94ms
+
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+    14:     data-amount="<%= @book.price %>"
+    15:     data-name="eStuk"
+    16:     data-description="<%= @book.name %>"
+    17:     data-email="<%= current_user.email %>">
+    18:   </script>
+    19:   <% end %>
+    20: 
+  app/views/books/show.html.erb:17:in `block in _app_views_books_show_html_erb__498350466_56846484'
+  app/views/books/show.html.erb:10:in `_app_views_books_show_html_erb__498350466_56846484'
+  app/controllers/books_controller.rb:13:in `show'
+
+
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (15.6ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (93.7ms)
+
+
+Started GET "/books/first_slugged_book" for ::1 at 2015-03-13 10:10:41 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"first_slugged_book"}
+  [1m[35mBook Load (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."slug" = ?  ORDER BY "books"."id" ASC LIMIT 1  [["slug", "first_slugged_book"]]
+  Rendered books/show.html.erb within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 32ms
+
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+    14:     data-amount="<%= @book.price %>"
+    15:     data-name="eStuk"
+    16:     data-description="<%= @book.name %>"
+    17:     data-email="<%= current_user.email %>">
+    18:   </script>
+    19:   <% end %>
+    20: 
+  app/views/books/show.html.erb:17:in `block in _app_views_books_show_html_erb__498350466_56846484'
+  app/views/books/show.html.erb:10:in `_app_views_books_show_html_erb__498350466_56846484'
+  app/controllers/books_controller.rb:13:in `show'
+
+
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (4.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (8.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (84.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-03-13 10:11:19 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (685.7ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 1029ms (Views: 998.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-03-13 10:11:32 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gASeye5Cu73HkRxxIUv6PZqUcXEhp27diMRAeanOsME3NOG+94RjASptqjZOanBbcotz4HCLSPv8VuJHdAVWxg==", "user"=>{"email"=>"seco.monica@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "seco.monica@gmail.com"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (4.0ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2015-03-03 08:57:53.767144"], ["current_sign_in_at", "2015-03-13 09:11:32.609950"], ["sign_in_count", 20], ["updated_at", "2015-03-13 09:11:32.613951"], ["id", 1]]
+  [1m[35m (148.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 400ms (ActiveRecord: 152.0ms)
+
+
+Started GET "/" for ::1 at 2015-03-13 10:11:32 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/books
+  [1m[35mBook Load (0.0ms)[0m  SELECT  "books".* FROM "books"  ORDER BY "books"."id" DESC LIMIT 4
+Completed 302 Found in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for ::1 at 2015-03-13 10:11:32 +0100
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."availability" = 't'[0m
+  Rendered books/_book.html.erb (4.0ms)
+  Rendered books/index.html.erb within layouts/application (12.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (4.0ms)
+Completed 200 OK in 400ms (Views: 356.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/_devise-cb16436538e96313bf2e8d00ada688de.css?body=1" for ::1 at 2015-03-13 10:11:33 +0100
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-29d4c3f4b867338d2dee8ebd23007b32.css?body=1" for ::1 at 2015-03-13 10:11:33 +0100
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-3d4ac324e8c8a16c343c471da829ffcc.css?body=1" for ::1 at 2015-03-13 10:11:33 +0100
+
+
+Started GET "/assets/books-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 10:11:33 +0100
+
+
+Started GET "/assets/application-a60f7a355a6c2982e1a070497e5622cc.css?body=1" for ::1 at 2015-03-13 10:11:33 +0100
+
+
+Started GET "/assets/bootstrap_and_overrides-322571ea6a70b83f2a1f403f8959c4f5.css?body=1" for ::1 at 2015-03-13 10:11:33 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-13 10:11:33 +0100
+
+
+Started GET "/assets/pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-13 10:11:33 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-13 10:11:33 +0100
+
+
+Started GET "/assets/twitter/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-03-13 10:11:33 +0100
+
+
+Started GET "/assets/twitter/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-03-13 10:11:33 +0100
+
+
+Started GET "/assets/twitter/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-03-13 10:11:33 +0100
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-03-13 10:11:33 +0100
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-03-13 10:11:33 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-03-13 10:11:33 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-03-13 10:11:33 +0100
+
+
+Started GET "/assets/twitter/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-03-13 10:11:33 +0100
+
+
+Started GET "/assets/twitter/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-03-13 10:11:33 +0100
+
+
+Started GET "/assets/twitter/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-03-13 10:11:33 +0100
+
+
+Started GET "/assets/twitter/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-03-13 10:11:33 +0100
+
+
+Started GET "/assets/twitter/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-03-13 10:11:33 +0100
+
+
+Started GET "/assets/twitter/bootstrap-bfd36ba45e965dc20fa69e1153274989.js?body=1" for ::1 at 2015-03-13 10:11:33 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-13 10:11:33 +0100
+
+
+Started GET "/assets/books-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 10:11:33 +0100
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-03-13 10:11:33 +0100
+
+
+Started GET "/assets/pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-13 10:11:33 +0100
+
+
+Started GET "/assets/application-6227e973a7bdc2dc64f2003ba40d9cc2.js?body=1" for ::1 at 2015-03-13 10:11:33 +0100
+
+
+Started GET "/books/first_slugged_book" for ::1 at 2015-03-13 10:11:37 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"first_slugged_book"}
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."slug" = ?  ORDER BY "books"."id" ASC LIMIT 1[0m  [["slug", "first_slugged_book"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered books/show.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 309ms (Views: 305.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/buy/first_slugged_book" for ::1 at 2015-03-13 10:12:00 +0100
+Processing by TransactionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1CJFUdEiZPpWTSkXGRO5aJ87wwgmwxi3LWY+9SNadDQLE7d/hPTndSTkXIY3ghKM+dHk8h6xdErtplQ2g3T+pQ==", "stripeToken"=>"tok_15fopxKtySJDg0AkKi3U99cm", "stripeTokenType"=>"card", "stripeEmail"=>"seco.monica@gmail.com", "slug"=>"first_slugged_book"}
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."slug" = ? LIMIT 1[0m  [["slug", "first_slugged_book"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "sales" ("amount", "buyer_email", "seller_email", "stripe_token", "book_id", "state", "created_at", "updated_at", "guid") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["amount", 1000], ["buyer_email", "seco.monica@gmail.com"], ["seller_email", "seco.monica@gmail.com"], ["stripe_token", "tok_15fopxKtySJDg0AkKi3U99cm"], ["book_id", 10], ["state", "pending"], ["created_at", "2015-03-13 09:12:01.289768"], ["updated_at", "2015-03-13 09:12:01.289768"], ["guid", "a2d12c15-1acb-4990-ae01-5b176c977bd4"]]
+  [1m[35m (192.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  UPDATE "sales" SET "state" = ?, "updated_at" = ? WHERE "sales"."id" = ?  [["state", "processing"], ["updated_at", "2015-03-13 09:12:01.493770"], ["id", 4]]
+  [1m[36mSQL (0.0ms)[0m  [1mUPDATE "sales" SET "stripe_id" = ?, "updated_at" = ? WHERE "sales"."id" = ?[0m  [["stripe_id", "ch_15foq2KtySJDg0AkVyeF1TZo"], ["updated_at", "2015-03-13 09:12:03.273828"], ["id", 4]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mUPDATE "sales" SET "state" = ?, "updated_at" = ? WHERE "sales"."id" = ?[0m  [["state", "finished"], ["updated_at", "2015-03-13 09:12:03.281817"], ["id", 4]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (108.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/pickup/a2d12c15-1acb-4990-ae01-5b176c977bd4
+Completed 302 Found in 2384ms (ActiveRecord: 300.1ms)
+
+
+Started GET "/pickup/a2d12c15-1acb-4990-ae01-5b176c977bd4" for ::1 at 2015-03-13 10:12:03 +0100
+Processing by TransactionsController#pickup as HTML
+  Parameters: {"guid"=>"a2d12c15-1acb-4990-ae01-5b176c977bd4"}
+  Rendered transactions/pickup.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 24ms
+
+ActionView::Template::Error (undefined method `guid' for nil:NilClass):
+    1: <div class="row text-center">
+    2: <h1>Congratulations on your order <%= @sale.guid %></h1>
+    3: <p>Here is your download link:</p>
+    4: <%= link_to "Download", @book.resource.url %>
+    5: </div>
+  app/views/transactions/pickup.html.erb:2:in `_app_views_transactions_pickup_html_erb__206996735_68944080'
+
+
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (8.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (88.0ms)
+
+
+Started GET "/" for ::1 at 2015-03-16 17:12:52 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+DEPRECATION WARNING: Currently, Active Record suppresses errors raised within `after_rollback`/`after_commit` callbacks and only print them to the logs. In the next version, these errors will no longer be suppressed. Instead, the errors will propagate normally just like in other Active Record callbacks.
+
+You can opt into the new behavior and remove this warning by setting:
+
+  config.active_record.raise_in_transactional_callbacks = true
+
+ (called from <class:Book> at c:/sites/estuk/app/models/book.rb:7)
+DEPRECATION WARNING: Currently, Active Record suppresses errors raised within `after_rollback`/`after_commit` callbacks and only print them to the logs. In the next version, these errors will no longer be suppressed. Instead, the errors will propagate normally just like in other Active Record callbacks.
+
+You can opt into the new behavior and remove this warning by setting:
+
+  config.active_record.raise_in_transactional_callbacks = true
+
+ (called from <class:Book> at c:/sites/estuk/app/models/book.rb:8)
+  [1m[35mBook Load (0.0ms)[0m  SELECT  "books".* FROM "books"  ORDER BY "books"."id" DESC LIMIT 4
+  Rendered books/_book.html.erb (24.0ms)
+  Rendered pages/home.html.erb within layouts/application (80.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 2124ms (Views: 1908.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/_devise-cb16436538e96313bf2e8d00ada688de.css?body=1" for ::1 at 2015-03-16 17:12:55 +0100
+
+
+Started GET "/assets/books-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 17:12:55 +0100
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-29d4c3f4b867338d2dee8ebd23007b32.css?body=1" for ::1 at 2015-03-16 17:12:55 +0100
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-3d4ac324e8c8a16c343c471da829ffcc.css?body=1" for ::1 at 2015-03-16 17:12:55 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 17:12:55 +0100
+
+
+Started GET "/assets/bootstrap_and_overrides-322571ea6a70b83f2a1f403f8959c4f5.css?body=1" for ::1 at 2015-03-16 17:12:55 +0100
+
+
+Started GET "/assets/pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 17:12:55 +0100
+
+
+Started GET "/assets/application-a60f7a355a6c2982e1a070497e5622cc.css?body=1" for ::1 at 2015-03-16 17:12:55 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 17:12:55 +0100
+
+
+Started GET "/assets/twitter/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-03-16 17:12:55 +0100
+
+
+Started GET "/assets/twitter/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-03-16 17:12:55 +0100
+
+
+Started GET "/assets/twitter/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-03-16 17:12:56 +0100
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-03-16 17:12:56 +0100
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-03-16 17:12:56 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-03-16 17:12:56 +0100
+
+
+Started GET "/assets/twitter/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-03-16 17:12:56 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-03-16 17:12:56 +0100
+
+
+Started GET "/assets/twitter/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-03-16 17:12:56 +0100
+
+
+Started GET "/assets/twitter/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-03-16 17:12:56 +0100
+
+
+Started GET "/assets/twitter/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-03-16 17:12:56 +0100
+
+
+Started GET "/assets/twitter/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-03-16 17:12:56 +0100
+
+
+Started GET "/assets/twitter/bootstrap-bfd36ba45e965dc20fa69e1153274989.js?body=1" for ::1 at 2015-03-16 17:12:56 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 17:12:56 +0100
+
+
+Started GET "/assets/books-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 17:12:56 +0100
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-03-16 17:12:56 +0100
+
+
+Started GET "/assets/pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 17:12:56 +0100
+
+
+Started GET "/assets/application-6227e973a7bdc2dc64f2003ba40d9cc2.js?body=1" for ::1 at 2015-03-16 17:12:56 +0100
+
+
+Started GET "/users/sign_in" for ::1 at 2015-03-16 17:13:00 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (15.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (653.2ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 1028ms (Views: 1012.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-03-16 17:13:08 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"czz0gB6B1yCK2liU/JOeOr4e/Leu3Y+cWBfrgnzjEUJWCRJsaETTRqOb06UK/79H2Y/I5H+0UJifKQ8dm3olmQ==", "user"=>{"email"=>"seco.monica@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "seco.monica@gmail.com"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2015-03-13 09:11:32.609950"], ["current_sign_in_at", "2015-03-16 16:13:09.227861"], ["sign_in_count", 21], ["updated_at", "2015-03-16 16:13:09.231862"], ["id", 1]]
+  [1m[35m (100.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 408ms (ActiveRecord: 100.0ms)
+
+
+Started GET "/" for ::1 at 2015-03-16 17:13:09 +0100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/books
+  [1m[35mBook Load (0.0ms)[0m  SELECT  "books".* FROM "books"  ORDER BY "books"."id" DESC LIMIT 4
+Completed 302 Found in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for ::1 at 2015-03-16 17:13:09 +0100
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."availability" = 't'[0m
+  Rendered books/_book.html.erb (4.0ms)
+  Rendered books/index.html.erb within layouts/application (12.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (4.0ms)
+Completed 200 OK in 392ms (Views: 384.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/_devise-cb16436538e96313bf2e8d00ada688de.css?body=1" for ::1 at 2015-03-16 17:13:10 +0100
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-29d4c3f4b867338d2dee8ebd23007b32.css?body=1" for ::1 at 2015-03-16 17:13:10 +0100
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-3d4ac324e8c8a16c343c471da829ffcc.css?body=1" for ::1 at 2015-03-16 17:13:10 +0100
+
+
+Started GET "/assets/books-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 17:13:10 +0100
+
+
+Started GET "/assets/bootstrap_and_overrides-322571ea6a70b83f2a1f403f8959c4f5.css?body=1" for ::1 at 2015-03-16 17:13:10 +0100
+
+
+Started GET "/assets/pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 17:13:10 +0100
+
+
+Started GET "/assets/application-a60f7a355a6c2982e1a070497e5622cc.css?body=1" for ::1 at 2015-03-16 17:13:10 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 17:13:10 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 17:13:10 +0100
+
+
+Started GET "/assets/twitter/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-03-16 17:13:10 +0100
+
+
+Started GET "/assets/twitter/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-03-16 17:13:10 +0100
+
+
+Started GET "/assets/twitter/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-03-16 17:13:10 +0100
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-03-16 17:13:10 +0100
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-03-16 17:13:10 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-03-16 17:13:10 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-03-16 17:13:10 +0100
+
+
+Started GET "/assets/twitter/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-03-16 17:13:10 +0100
+
+
+Started GET "/assets/twitter/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-03-16 17:13:10 +0100
+
+
+Started GET "/assets/twitter/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-03-16 17:13:10 +0100
+
+
+Started GET "/assets/twitter/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-03-16 17:13:10 +0100
+
+
+Started GET "/assets/twitter/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-03-16 17:13:10 +0100
+
+
+Started GET "/assets/twitter/bootstrap-bfd36ba45e965dc20fa69e1153274989.js?body=1" for ::1 at 2015-03-16 17:13:10 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 17:13:10 +0100
+
+
+Started GET "/assets/books-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 17:13:10 +0100
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-03-16 17:13:10 +0100
+
+
+Started GET "/assets/pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 17:13:10 +0100
+
+
+Started GET "/assets/application-6227e973a7bdc2dc64f2003ba40d9cc2.js?body=1" for ::1 at 2015-03-16 17:13:10 +0100
+
+
+Started GET "/books/first_slugged_book" for ::1 at 2015-03-16 17:13:13 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"first_slugged_book"}
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."slug" = ?  ORDER BY "books"."id" ASC LIMIT 1[0m  [["slug", "first_slugged_book"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered books/show.html.erb within layouts/application (15.6ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 359ms (Views: 343.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/buy/first_slugged_book" for ::1 at 2015-03-16 17:13:36 +0100
+
+AbstractController::ActionNotFound (The action 'create' could not be found for TransactionsController):
+  actionpack (4.2.0) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  c:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  c:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  c:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/unknown_action.html.erb within rescues/layout (0.0ms)
+
+
+Started POST "/buy/first_slugged_book" for ::1 at 2015-03-16 17:18:00 +0100
+Processing by TransactionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DUOHbd+Tlll+PyBuvE4KgwI0ar4LZ62eyMYNXUnqk401v9YuVQbMqY6hpcDp01Spcq8LWKK7kS5M1Tjzgwd9yQ==", "stripeToken"=>"tok_15h0qRKtySJDg0AkzZa2YtYS", "stripeTokenType"=>"card", "stripeEmail"=>"seco.monica@gmail.com", "slug"=>"first_slugged_book"}
+DEPRECATION WARNING: Currently, Active Record suppresses errors raised within `after_rollback`/`after_commit` callbacks and only print them to the logs. In the next version, these errors will no longer be suppressed. Instead, the errors will propagate normally just like in other Active Record callbacks.
+
+You can opt into the new behavior and remove this warning by setting:
+
+  config.active_record.raise_in_transactional_callbacks = true
+
+ (called from <class:Book> at c:/sites/estuk/app/models/book.rb:7)
+DEPRECATION WARNING: Currently, Active Record suppresses errors raised within `after_rollback`/`after_commit` callbacks and only print them to the logs. In the next version, these errors will no longer be suppressed. Instead, the errors will propagate normally just like in other Active Record callbacks.
+
+You can opt into the new behavior and remove this warning by setting:
+
+  config.active_record.raise_in_transactional_callbacks = true
+
+ (called from <class:Book> at c:/sites/estuk/app/models/book.rb:8)
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."slug" = ? LIMIT 1[0m  [["slug", "first_slugged_book"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "sales" ("amount", "buyer_email", "seller_email", "stripe_token", "book_id", "state", "created_at", "updated_at", "guid") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["amount", 1000], ["buyer_email", "seco.monica@gmail.com"], ["seller_email", "seco.monica@gmail.com"], ["stripe_token", "tok_15h0qRKtySJDg0AkzZa2YtYS"], ["book_id", 10], ["state", "pending"], ["created_at", "2015-03-16 16:18:00.844215"], ["updated_at", "2015-03-16 16:18:00.844215"], ["guid", "96f014cc-287c-4912-9494-6f06bb69d00d"]]
+  [1m[35m (144.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  UPDATE "sales" SET "state" = ?, "updated_at" = ? WHERE "sales"."id" = ?  [["state", "processing"], ["updated_at", "2015-03-16 16:18:00.996216"], ["id", 5]]
+  [1m[36mSQL (20.0ms)[0m  [1mUPDATE "sales" SET "stripe_id" = ?, "updated_at" = ? WHERE "sales"."id" = ?[0m  [["stripe_id", "ch_15h0umKtySJDg0AkiM3DSR21"], ["updated_at", "2015-03-16 16:18:02.860298"], ["id", 5]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mUPDATE "sales" SET "state" = ?, "updated_at" = ? WHERE "sales"."id" = ?[0m  [["state", "finished"], ["updated_at", "2015-03-16 16:18:02.888266"], ["id", 5]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (136.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/pickup/96f014cc-287c-4912-9494-6f06bb69d00d
+Completed 302 Found in 2448ms (ActiveRecord: 308.0ms)
+
+
+Started GET "/pickup/96f014cc-287c-4912-9494-6f06bb69d00d" for ::1 at 2015-03-16 17:18:03 +0100
+Processing by TransactionsController#pickup as HTML
+  Parameters: {"guid"=>"96f014cc-287c-4912-9494-6f06bb69d00d"}
+  [1m[35mSale Load (4.0ms)[0m  SELECT  "sales".* FROM "sales" WHERE "sales"."guid" = ? LIMIT 1  [["guid", "96f014cc-287c-4912-9494-6f06bb69d00d"]]
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  Rendered transactions/pickup.html.erb within layouts/application (4.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (4.0ms)
+Completed 200 OK in 376ms (Views: 368.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/books-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 17:18:03 +0100
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-29d4c3f4b867338d2dee8ebd23007b32.css?body=1" for ::1 at 2015-03-16 17:18:03 +0100
+
+
+Started GET "/assets/_devise-cb16436538e96313bf2e8d00ada688de.css?body=1" for ::1 at 2015-03-16 17:18:03 +0100
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-3d4ac324e8c8a16c343c471da829ffcc.css?body=1" for ::1 at 2015-03-16 17:18:03 +0100
+
+
+Started GET "/assets/bootstrap_and_overrides-322571ea6a70b83f2a1f403f8959c4f5.css?body=1" for ::1 at 2015-03-16 17:18:03 +0100
+
+
+Started GET "/assets/pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 17:18:03 +0100
+
+
+Started GET "/assets/application-a60f7a355a6c2982e1a070497e5622cc.css?body=1" for ::1 at 2015-03-16 17:18:03 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 17:18:03 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 17:18:03 +0100
+
+
+Started GET "/assets/twitter/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-03-16 17:18:03 +0100
+
+
+Started GET "/assets/twitter/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-03-16 17:18:03 +0100
+
+
+Started GET "/assets/twitter/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-03-16 17:18:03 +0100
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-03-16 17:18:03 +0100
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-03-16 17:18:03 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-03-16 17:18:03 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-03-16 17:18:03 +0100
+
+
+Started GET "/assets/twitter/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-03-16 17:18:03 +0100
+
+
+Started GET "/assets/twitter/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-03-16 17:18:03 +0100
+
+
+Started GET "/assets/twitter/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-03-16 17:18:03 +0100
+
+
+Started GET "/assets/twitter/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-03-16 17:18:03 +0100
+
+
+Started GET "/assets/twitter/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-03-16 17:18:03 +0100
+
+
+Started GET "/assets/twitter/bootstrap-bfd36ba45e965dc20fa69e1153274989.js?body=1" for ::1 at 2015-03-16 17:18:03 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 17:18:03 +0100
+
+
+Started GET "/assets/books-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 17:18:04 +0100
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-03-16 17:18:04 +0100
+
+
+Started GET "/assets/pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 17:18:04 +0100
+
+
+Started GET "/assets/application-6227e973a7bdc2dc64f2003ba40d9cc2.js?body=1" for ::1 at 2015-03-16 17:18:04 +0100
+  [1m[36mSale Load (0.0ms)[0m  [1mSELECT  "sales".* FROM "sales"  ORDER BY "sales"."id" DESC LIMIT 1[0m
+
+
+Started GET "/" for ::1 at 2015-03-16 17:27:44 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/books
+DEPRECATION WARNING: Currently, Active Record suppresses errors raised within `after_rollback`/`after_commit` callbacks and only print them to the logs. In the next version, these errors will no longer be suppressed. Instead, the errors will propagate normally just like in other Active Record callbacks.
+
+You can opt into the new behavior and remove this warning by setting:
+
+  config.active_record.raise_in_transactional_callbacks = true
+
+ (called from <class:Book> at c:/sites/estuk/app/models/book.rb:7)
+DEPRECATION WARNING: Currently, Active Record suppresses errors raised within `after_rollback`/`after_commit` callbacks and only print them to the logs. In the next version, these errors will no longer be suppressed. Instead, the errors will propagate normally just like in other Active Record callbacks.
+
+You can opt into the new behavior and remove this warning by setting:
+
+  config.active_record.raise_in_transactional_callbacks = true
+
+ (called from <class:Book> at c:/sites/estuk/app/models/book.rb:8)
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT  "books".* FROM "books"  ORDER BY "books"."id" DESC LIMIT 4[0m
+Completed 302 Found in 140ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/books" for ::1 at 2015-03-16 17:27:44 +0100
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (4.0ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = 't'
+  Rendered books/_book.html.erb (8.0ms)
+  Rendered books/index.html.erb within layouts/application (28.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (4.0ms)
+Completed 200 OK in 656ms (Views: 640.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/_devise-cb16436538e96313bf2e8d00ada688de.css?body=1" for ::1 at 2015-03-16 17:27:45 +0100
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-3d4ac324e8c8a16c343c471da829ffcc.css?body=1" for ::1 at 2015-03-16 17:27:45 +0100
+
+
+Started GET "/assets/books-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 17:27:45 +0100
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-29d4c3f4b867338d2dee8ebd23007b32.css?body=1" for ::1 at 2015-03-16 17:27:45 +0100
+
+
+Started GET "/assets/pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 17:27:45 +0100
+
+
+Started GET "/assets/bootstrap_and_overrides-322571ea6a70b83f2a1f403f8959c4f5.css?body=1" for ::1 at 2015-03-16 17:27:45 +0100
+
+
+Started GET "/assets/application-a60f7a355a6c2982e1a070497e5622cc.css?body=1" for ::1 at 2015-03-16 17:27:45 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 17:27:45 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 17:27:45 +0100
+
+
+Started GET "/assets/twitter/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-03-16 17:27:45 +0100
+
+
+Started GET "/assets/twitter/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-03-16 17:27:45 +0100
+
+
+Started GET "/assets/twitter/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-03-16 17:27:45 +0100
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-03-16 17:27:45 +0100
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-03-16 17:27:45 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-03-16 17:27:45 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-03-16 17:27:45 +0100
+
+
+Started GET "/assets/twitter/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-03-16 17:27:45 +0100
+
+
+Started GET "/assets/twitter/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-03-16 17:27:45 +0100
+
+
+Started GET "/assets/twitter/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-03-16 17:27:45 +0100
+
+
+Started GET "/assets/twitter/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-03-16 17:27:45 +0100
+
+
+Started GET "/assets/twitter/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-03-16 17:27:45 +0100
+
+
+Started GET "/assets/twitter/bootstrap-bfd36ba45e965dc20fa69e1153274989.js?body=1" for ::1 at 2015-03-16 17:27:45 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 17:27:45 +0100
+
+
+Started GET "/assets/books-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 17:27:45 +0100
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-03-16 17:27:45 +0100
+
+
+Started GET "/assets/pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 17:27:45 +0100
+
+
+Started GET "/assets/application-6227e973a7bdc2dc64f2003ba40d9cc2.js?body=1" for ::1 at 2015-03-16 17:27:45 +0100
+
+
+Started GET "/books/ruby-on-rails-tutorial" for ::1 at 2015-03-16 17:27:57 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"ruby-on-rails-tutorial"}
+  [1m[35mBook Load (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."slug" = ?  ORDER BY "books"."id" ASC LIMIT 1  [["slug", "ruby-on-rails-tutorial"]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered books/show.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 358ms (Views: 358.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/buy/ruby-on-rails-tutorial" for ::1 at 2015-03-16 17:28:23 +0100
+Processing by TransactionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O37N0DL+EHaCCfy483iw2wcsoSZnf6J+2R4or1l0pnADgpyTuGtKhnKXeRam5e7xd7fAwM6jns5dDR0Bk5lINA==", "stripeToken"=>"tok_15h14lKtySJDg0AkvzVBgJzX", "stripeTokenType"=>"card", "stripeEmail"=>"seco.monica@gmail.com", "slug"=>"ruby-on-rails-tutorial"}
+  [1m[35mBook Load (4.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."slug" = ? LIMIT 1  [["slug", "ruby-on-rails-tutorial"]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO "sales" ("amount", "buyer_email", "seller_email", "stripe_token", "book_id", "state", "created_at", "updated_at", "guid") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["amount", 1000], ["buyer_email", "seco.monica@gmail.com"], ["seller_email", "seco.monica@gmail.com"], ["stripe_token", "tok_15h14lKtySJDg0AkvzVBgJzX"], ["book_id", 9], ["state", "pending"], ["created_at", "2015-03-16 16:28:24.167117"], ["updated_at", "2015-03-16 16:28:24.167117"], ["guid", "6d83f11f-6336-4481-b26e-d06e8dd41f06"]]
+  [1m[36m (116.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mUPDATE "sales" SET "state" = ?, "updated_at" = ? WHERE "sales"."id" = ?[0m  [["state", "processing"], ["updated_at", "2015-03-16 16:28:24.295130"], ["id", 6]]
+  [1m[35mSQL (0.0ms)[0m  UPDATE "sales" SET "stripe_id" = ?, "updated_at" = ? WHERE "sales"."id" = ?  [["stripe_id", "ch_15h14pKtySJDg0AkIy9J20eE"], ["updated_at", "2015-03-16 16:28:26.071173"], ["id", 6]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  UPDATE "sales" SET "state" = ?, "updated_at" = ? WHERE "sales"."id" = ?  [["state", "finished"], ["updated_at", "2015-03-16 16:28:26.079169"], ["id", 6]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (188.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/pickup/6d83f11f-6336-4481-b26e-d06e8dd41f06
+Completed 302 Found in 2244ms (ActiveRecord: 312.1ms)
+
+
+Started GET "/pickup/6d83f11f-6336-4481-b26e-d06e8dd41f06" for ::1 at 2015-03-16 17:28:26 +0100
+Processing by TransactionsController#pickup as HTML
+  Parameters: {"guid"=>"6d83f11f-6336-4481-b26e-d06e8dd41f06"}
+  [1m[36mSale Load (0.0ms)[0m  [1mSELECT  "sales".* FROM "sales" WHERE "sales"."guid" = ? LIMIT 1[0m  [["guid", "6d83f11f-6336-4481-b26e-d06e8dd41f06"]]
+  [1m[35mBook Load (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered transactions/pickup.html.erb within layouts/application (4.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (8.0ms)
+Completed 200 OK in 364ms (Views: 356.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/_devise-cb16436538e96313bf2e8d00ada688de.css?body=1" for ::1 at 2015-03-16 17:28:26 +0100
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-29d4c3f4b867338d2dee8ebd23007b32.css?body=1" for ::1 at 2015-03-16 17:28:26 +0100
+
+
+Started GET "/assets/books-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 17:28:26 +0100
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-3d4ac324e8c8a16c343c471da829ffcc.css?body=1" for ::1 at 2015-03-16 17:28:26 +0100
+
+
+Started GET "/assets/bootstrap_and_overrides-322571ea6a70b83f2a1f403f8959c4f5.css?body=1" for ::1 at 2015-03-16 17:28:26 +0100
+
+
+Started GET "/assets/application-a60f7a355a6c2982e1a070497e5622cc.css?body=1" for ::1 at 2015-03-16 17:28:26 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 17:28:26 +0100
+
+
+Started GET "/assets/pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 17:28:26 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 17:28:26 +0100
+
+
+Started GET "/assets/twitter/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-03-16 17:28:27 +0100
+
+
+Started GET "/assets/twitter/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-03-16 17:28:27 +0100
+
+
+Started GET "/assets/twitter/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-03-16 17:28:27 +0100
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-03-16 17:28:27 +0100
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-03-16 17:28:27 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-03-16 17:28:27 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-03-16 17:28:27 +0100
+
+
+Started GET "/assets/twitter/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-03-16 17:28:27 +0100
+
+
+Started GET "/assets/twitter/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-03-16 17:28:27 +0100
+
+
+Started GET "/assets/twitter/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-03-16 17:28:27 +0100
+
+
+Started GET "/assets/twitter/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-03-16 17:28:27 +0100
+
+
+Started GET "/assets/twitter/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-03-16 17:28:27 +0100
+
+
+Started GET "/assets/twitter/bootstrap-bfd36ba45e965dc20fa69e1153274989.js?body=1" for ::1 at 2015-03-16 17:28:27 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 17:28:27 +0100
+
+
+Started GET "/assets/books-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 17:28:27 +0100
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-03-16 17:28:27 +0100
+
+
+Started GET "/assets/pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 17:28:27 +0100
+
+
+Started GET "/assets/application-6227e973a7bdc2dc64f2003ba40d9cc2.js?body=1" for ::1 at 2015-03-16 17:28:27 +0100
+  [1m[36mSale Load (0.0ms)[0m  [1mSELECT  "sales".* FROM "sales"  ORDER BY "sales"."id" DESC LIMIT 1[0m
