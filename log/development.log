@@ -26129,3 +26129,646 @@ Started GET "/assets/pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 a
 
 Started GET "/assets/application-6227e973a7bdc2dc64f2003ba40d9cc2.js?body=1" for ::1 at 2015-03-16 17:28:27 +0100
   [1m[36mSale Load (0.0ms)[0m  [1mSELECT  "sales".* FROM "sales"  ORDER BY "sales"."id" DESC LIMIT 1[0m
+
+
+Started GET "/dashboard" for ::1 at 2015-03-16 17:32:52 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#dashboard as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+DEPRECATION WARNING: Currently, Active Record suppresses errors raised within `after_rollback`/`after_commit` callbacks and only print them to the logs. In the next version, these errors will no longer be suppressed. Instead, the errors will propagate normally just like in other Active Record callbacks.
+
+You can opt into the new behavior and remove this warning by setting:
+
+  config.active_record.raise_in_transactional_callbacks = true
+
+ (called from <class:Book> at c:/sites/estuk/app/models/book.rb:7)
+DEPRECATION WARNING: Currently, Active Record suppresses errors raised within `after_rollback`/`after_commit` callbacks and only print them to the logs. In the next version, these errors will no longer be suppressed. Instead, the errors will propagate normally just like in other Active Record callbacks.
+
+You can opt into the new behavior and remove this warning by setting:
+
+  config.active_record.raise_in_transactional_callbacks = true
+
+ (called from <class:Book> at c:/sites/estuk/app/models/book.rb:8)
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered pages/dashboard.html.erb within layouts/application (62.5ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 810ms (Views: 656.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-03-16 17:37:11 +0100
+Processing by PagesController#dashboard as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered pages/_books.html.erb (8.0ms)
+  Rendered pages/dashboard.html.erb within layouts/application (12.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 392ms (Views: 384.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/books-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 17:37:11 +0100
+
+
+Started GET "/assets/_devise-cb16436538e96313bf2e8d00ada688de.css?body=1" for ::1 at 2015-03-16 17:37:11 +0100
+
+
+Started GET "/assets/pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 17:37:11 +0100
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-3d4ac324e8c8a16c343c471da829ffcc.css?body=1" for ::1 at 2015-03-16 17:37:11 +0100
+
+
+Started GET "/assets/bootstrap_and_overrides-322571ea6a70b83f2a1f403f8959c4f5.css?body=1" for ::1 at 2015-03-16 17:37:11 +0100
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-29d4c3f4b867338d2dee8ebd23007b32.css?body=1" for ::1 at 2015-03-16 17:37:11 +0100
+
+
+Started GET "/assets/application-a60f7a355a6c2982e1a070497e5622cc.css?body=1" for ::1 at 2015-03-16 17:37:11 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 17:37:11 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 17:37:11 +0100
+
+
+Started GET "/assets/twitter/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-03-16 17:37:11 +0100
+
+
+Started GET "/assets/twitter/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-03-16 17:37:11 +0100
+
+
+Started GET "/assets/twitter/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-03-16 17:37:11 +0100
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-03-16 17:37:11 +0100
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-03-16 17:37:11 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-03-16 17:37:11 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-03-16 17:37:12 +0100
+
+
+Started GET "/assets/twitter/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-03-16 17:37:12 +0100
+
+
+Started GET "/assets/twitter/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-03-16 17:37:12 +0100
+
+
+Started GET "/assets/twitter/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-03-16 17:37:12 +0100
+
+
+Started GET "/assets/twitter/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-03-16 17:37:12 +0100
+
+
+Started GET "/assets/twitter/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-03-16 17:37:12 +0100
+
+
+Started GET "/assets/twitter/bootstrap-bfd36ba45e965dc20fa69e1153274989.js?body=1" for ::1 at 2015-03-16 17:37:12 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 17:37:12 +0100
+
+
+Started GET "/assets/books-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 17:37:12 +0100
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-03-16 17:37:12 +0100
+
+
+Started GET "/assets/pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 17:37:12 +0100
+
+
+Started GET "/assets/application-6227e973a7bdc2dc64f2003ba40d9cc2.js?body=1" for ::1 at 2015-03-16 17:37:12 +0100
+
+
+Started GET "/dashboard" for ::1 at 2015-03-16 17:47:51 +0100
+Processing by PagesController#dashboard as HTML
+  [1m[35mUser Load (4.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+DEPRECATION WARNING: Currently, Active Record suppresses errors raised within `after_rollback`/`after_commit` callbacks and only print them to the logs. In the next version, these errors will no longer be suppressed. Instead, the errors will propagate normally just like in other Active Record callbacks.
+
+You can opt into the new behavior and remove this warning by setting:
+
+  config.active_record.raise_in_transactional_callbacks = true
+
+ (called from <class:Book> at c:/sites/estuk/app/models/book.rb:7)
+DEPRECATION WARNING: Currently, Active Record suppresses errors raised within `after_rollback`/`after_commit` callbacks and only print them to the logs. In the next version, these errors will no longer be suppressed. Instead, the errors will propagate normally just like in other Active Record callbacks.
+
+You can opt into the new behavior and remove this warning by setting:
+
+  config.active_record.raise_in_transactional_callbacks = true
+
+ (called from <class:Book> at c:/sites/estuk/app/models/book.rb:8)
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered pages/_books.html.erb (44.0ms)
+  [1m[35mSale Load (0.0ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."buyer_email" = ?  [["buyer_email", "seco.monica@gmail.com"]]
+  [1m[36mBook Load (4.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mBook Load (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered pages/_purchased.html.erb (108.0ms)
+  Rendered pages/dashboard.html.erb within layouts/application (164.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 764ms (Views: 656.0ms | ActiveRecord: 20.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides-322571ea6a70b83f2a1f403f8959c4f5.css?body=1" for ::1 at 2015-03-16 17:47:52 +0100
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-3d4ac324e8c8a16c343c471da829ffcc.css?body=1" for ::1 at 2015-03-16 17:47:52 +0100
+
+
+Started GET "/assets/books-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 17:47:52 +0100
+
+
+Started GET "/assets/_devise-cb16436538e96313bf2e8d00ada688de.css?body=1" for ::1 at 2015-03-16 17:47:52 +0100
+
+
+Started GET "/assets/pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 17:47:52 +0100
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-29d4c3f4b867338d2dee8ebd23007b32.css?body=1" for ::1 at 2015-03-16 17:47:52 +0100
+
+
+Started GET "/assets/application-a60f7a355a6c2982e1a070497e5622cc.css?body=1" for ::1 at 2015-03-16 17:47:52 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 17:47:52 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 17:47:52 +0100
+
+
+Started GET "/assets/twitter/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-03-16 17:47:52 +0100
+
+
+Started GET "/assets/twitter/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-03-16 17:47:52 +0100
+
+
+Started GET "/assets/twitter/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-03-16 17:47:52 +0100
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-03-16 17:47:52 +0100
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-03-16 17:47:52 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-03-16 17:47:52 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-03-16 17:47:52 +0100
+
+
+Started GET "/assets/twitter/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-03-16 17:47:52 +0100
+
+
+Started GET "/assets/twitter/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-03-16 17:47:52 +0100
+
+
+Started GET "/assets/twitter/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-03-16 17:47:52 +0100
+
+
+Started GET "/assets/twitter/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-03-16 17:47:52 +0100
+
+
+Started GET "/assets/twitter/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-03-16 17:47:52 +0100
+
+
+Started GET "/assets/twitter/bootstrap-bfd36ba45e965dc20fa69e1153274989.js?body=1" for ::1 at 2015-03-16 17:47:52 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 17:47:52 +0100
+
+
+Started GET "/assets/books-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 17:47:53 +0100
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-03-16 17:47:53 +0100
+
+
+Started GET "/assets/pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 17:47:53 +0100
+
+
+Started GET "/assets/application-6227e973a7bdc2dc64f2003ba40d9cc2.js?body=1" for ::1 at 2015-03-16 17:47:53 +0100
+
+
+Started GET "/pickup/ce6a911b-09cd-4dc2-8eee-fe794dbcdced" for ::1 at 2015-03-16 17:48:08 +0100
+Processing by TransactionsController#pickup as HTML
+  Parameters: {"guid"=>"ce6a911b-09cd-4dc2-8eee-fe794dbcdced"}
+  [1m[36mSale Load (0.0ms)[0m  [1mSELECT  "sales".* FROM "sales" WHERE "sales"."guid" = ? LIMIT 1[0m  [["guid", "ce6a911b-09cd-4dc2-8eee-fe794dbcdced"]]
+  [1m[35mBook Load (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered transactions/pickup.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (15.6ms)
+Completed 200 OK in 344ms (Views: 343.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-03-16 17:48:19 +0100
+Processing by PagesController#dashboard as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered pages/_books.html.erb (0.0ms)
+  [1m[35mSale Load (0.0ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."buyer_email" = ?  [["buyer_email", "seco.monica@gmail.com"]]
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mBook Load (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered pages/_purchased.html.erb (15.6ms)
+  Rendered pages/dashboard.html.erb within layouts/application (46.9ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 359ms (Views: 343.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-03-16 17:53:01 +0100
+Processing by PagesController#dashboard as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: Currently, Active Record suppresses errors raised within `after_rollback`/`after_commit` callbacks and only print them to the logs. In the next version, these errors will no longer be suppressed. Instead, the errors will propagate normally just like in other Active Record callbacks.
+
+You can opt into the new behavior and remove this warning by setting:
+
+  config.active_record.raise_in_transactional_callbacks = true
+
+ (called from <class:Book> at c:/sites/estuk/app/models/book.rb:7)
+DEPRECATION WARNING: Currently, Active Record suppresses errors raised within `after_rollback`/`after_commit` callbacks and only print them to the logs. In the next version, these errors will no longer be suppressed. Instead, the errors will propagate normally just like in other Active Record callbacks.
+
+You can opt into the new behavior and remove this warning by setting:
+
+  config.active_record.raise_in_transactional_callbacks = true
+
+ (called from <class:Book> at c:/sites/estuk/app/models/book.rb:8)
+  [1m[35mBook Load (0.0ms)[0m  SELECT "books".* FROM "books" WHERE "books"."user_id" = ?  [["user_id", 1]]
+  Rendered pages/_books.html.erb (24.0ms)
+  [1m[36mSale Load (0.0ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."buyer_email" = ?[0m  [["buyer_email", "seco.monica@gmail.com"]]
+  [1m[35mBook Load (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered pages/_purchased.html.erb (28.0ms)
+  [1m[35mSale Load (0.0ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."seller_email" = ?  [["seller_email", "seco.monica@gmail.com"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered pages/_sales.html.erb (16.0ms)
+  Rendered pages/dashboard.html.erb within layouts/application (88.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 500ms (Views: 424.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/books-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 17:53:02 +0100
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-3d4ac324e8c8a16c343c471da829ffcc.css?body=1" for ::1 at 2015-03-16 17:53:02 +0100
+
+
+Started GET "/assets/_devise-cb16436538e96313bf2e8d00ada688de.css?body=1" for ::1 at 2015-03-16 17:53:02 +0100
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-29d4c3f4b867338d2dee8ebd23007b32.css?body=1" for ::1 at 2015-03-16 17:53:02 +0100
+
+
+Started GET "/assets/bootstrap_and_overrides-322571ea6a70b83f2a1f403f8959c4f5.css?body=1" for ::1 at 2015-03-16 17:53:02 +0100
+
+
+Started GET "/assets/pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 17:53:02 +0100
+
+
+Started GET "/assets/application-a60f7a355a6c2982e1a070497e5622cc.css?body=1" for ::1 at 2015-03-16 17:53:02 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 17:53:02 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 17:53:02 +0100
+
+
+Started GET "/assets/twitter/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-03-16 17:53:02 +0100
+
+
+Started GET "/assets/twitter/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-03-16 17:53:02 +0100
+
+
+Started GET "/assets/twitter/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-03-16 17:53:02 +0100
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-03-16 17:53:02 +0100
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-03-16 17:53:02 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-03-16 17:53:02 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-03-16 17:53:02 +0100
+
+
+Started GET "/assets/twitter/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-03-16 17:53:02 +0100
+
+
+Started GET "/assets/twitter/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-03-16 17:53:02 +0100
+
+
+Started GET "/assets/twitter/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-03-16 17:53:02 +0100
+
+
+Started GET "/assets/twitter/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-03-16 17:53:02 +0100
+
+
+Started GET "/assets/twitter/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-03-16 17:53:02 +0100
+
+
+Started GET "/assets/twitter/bootstrap-bfd36ba45e965dc20fa69e1153274989.js?body=1" for ::1 at 2015-03-16 17:53:02 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 17:53:03 +0100
+
+
+Started GET "/assets/books-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 17:53:03 +0100
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-03-16 17:53:03 +0100
+
+
+Started GET "/assets/pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 17:53:03 +0100
+
+
+Started GET "/assets/application-6227e973a7bdc2dc64f2003ba40d9cc2.js?body=1" for ::1 at 2015-03-16 17:53:03 +0100
+
+
+Started GET "/dashboard" for ::1 at 2015-03-16 17:54:30 +0100
+Processing by PagesController#dashboard as HTML
+  [1m[35mUser Load (4.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered pages/_books.html.erb (4.0ms)
+  [1m[35mSale Load (0.0ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."buyer_email" = ?  [["buyer_email", "seco.monica@gmail.com"]]
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mBook Load (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered pages/_purchased.html.erb (12.0ms)
+  [1m[36mSale Load (0.0ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."seller_email" = ?[0m  [["seller_email", "seco.monica@gmail.com"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered pages/_sales.html.erb (12.0ms)
+  Rendered pages/dashboard.html.erb within layouts/application (48.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 404ms (Views: 400.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/_devise-cb16436538e96313bf2e8d00ada688de.css?body=1" for ::1 at 2015-03-16 17:54:30 +0100
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-3d4ac324e8c8a16c343c471da829ffcc.css?body=1" for ::1 at 2015-03-16 17:54:30 +0100
+
+
+Started GET "/assets/books-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 17:54:30 +0100
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-29d4c3f4b867338d2dee8ebd23007b32.css?body=1" for ::1 at 2015-03-16 17:54:30 +0100
+
+
+Started GET "/assets/application-a60f7a355a6c2982e1a070497e5622cc.css?body=1" for ::1 at 2015-03-16 17:54:30 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 17:54:30 +0100
+
+
+Started GET "/assets/bootstrap_and_overrides-322571ea6a70b83f2a1f403f8959c4f5.css?body=1" for ::1 at 2015-03-16 17:54:30 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 17:54:30 +0100
+
+
+Started GET "/assets/pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 17:54:31 +0100
+
+
+Started GET "/assets/twitter/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-03-16 17:54:31 +0100
+
+
+Started GET "/assets/twitter/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-03-16 17:54:31 +0100
+
+
+Started GET "/assets/twitter/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-03-16 17:54:31 +0100
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-03-16 17:54:31 +0100
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-03-16 17:54:31 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-03-16 17:54:31 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-03-16 17:54:31 +0100
+
+
+Started GET "/assets/twitter/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-03-16 17:54:31 +0100
+
+
+Started GET "/assets/twitter/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-03-16 17:54:31 +0100
+
+
+Started GET "/assets/twitter/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-03-16 17:54:31 +0100
+
+
+Started GET "/assets/twitter/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-03-16 17:54:31 +0100
+
+
+Started GET "/assets/twitter/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-03-16 17:54:31 +0100
+
+
+Started GET "/assets/twitter/bootstrap-bfd36ba45e965dc20fa69e1153274989.js?body=1" for ::1 at 2015-03-16 17:54:31 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 17:54:31 +0100
+
+
+Started GET "/assets/books-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 17:54:31 +0100
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-03-16 17:54:31 +0100
+
+
+Started GET "/assets/pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 17:54:31 +0100
+
+
+Started GET "/assets/application-6227e973a7bdc2dc64f2003ba40d9cc2.js?body=1" for ::1 at 2015-03-16 17:54:31 +0100
+
+
+Started GET "/dashboard" for ::1 at 2015-03-16 17:54:33 +0100
+Processing by PagesController#dashboard as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBook Load (0.0ms)[0m  SELECT "books".* FROM "books" WHERE "books"."user_id" = ?  [["user_id", 1]]
+  Rendered pages/_books.html.erb (0.0ms)
+  [1m[36mSale Load (0.0ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."buyer_email" = ?[0m  [["buyer_email", "seco.monica@gmail.com"]]
+  [1m[35mBook Load (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered pages/_purchased.html.erb (15.6ms)
+  [1m[35mSale Load (0.0ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."seller_email" = ?  [["seller_email", "seco.monica@gmail.com"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered pages/_sales.html.erb (0.0ms)
+  Rendered pages/dashboard.html.erb within layouts/application (31.3ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 359ms (Views: 343.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-03-16 17:54:34 +0100
+Processing by PagesController#dashboard as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered pages/_books.html.erb (15.6ms)
+  [1m[35mSale Load (0.0ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."buyer_email" = ?  [["buyer_email", "seco.monica@gmail.com"]]
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mBook Load (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered pages/_purchased.html.erb (15.6ms)
+  [1m[36mSale Load (0.0ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."seller_email" = ?[0m  [["seller_email", "seco.monica@gmail.com"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered pages/_sales.html.erb (15.6ms)
+  Rendered pages/dashboard.html.erb within layouts/application (46.9ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 356ms (Views: 351.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-03-16 17:54:36 +0100
+Processing by PagesController#dashboard as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBook Load (0.0ms)[0m  SELECT "books".* FROM "books" WHERE "books"."user_id" = ?  [["user_id", 1]]
+  Rendered pages/_books.html.erb (0.0ms)
+  [1m[36mSale Load (0.0ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."buyer_email" = ?[0m  [["buyer_email", "seco.monica@gmail.com"]]
+  [1m[35mBook Load (15.6ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered pages/_purchased.html.erb (15.6ms)
+  [1m[35mSale Load (0.0ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."seller_email" = ?  [["seller_email", "seco.monica@gmail.com"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered pages/_sales.html.erb (15.6ms)
+  Rendered pages/dashboard.html.erb within layouts/application (46.9ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 359ms (Views: 343.8ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-03-16 17:54:37 +0100
+Processing by PagesController#dashboard as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered pages/_books.html.erb (15.6ms)
+  [1m[35mSale Load (0.0ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."buyer_email" = ?  [["buyer_email", "seco.monica@gmail.com"]]
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mBook Load (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered pages/_purchased.html.erb (15.6ms)
+  [1m[36mSale Load (0.0ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."seller_email" = ?[0m  [["seller_email", "seco.monica@gmail.com"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered pages/_sales.html.erb (15.6ms)
+  Rendered pages/dashboard.html.erb within layouts/application (46.9ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 358ms (Views: 357.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-03-16 17:54:38 +0100
+Processing by PagesController#dashboard as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBook Load (0.0ms)[0m  SELECT "books".* FROM "books" WHERE "books"."user_id" = ?  [["user_id", 1]]
+  Rendered pages/_books.html.erb (15.6ms)
+  [1m[36mSale Load (0.0ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."buyer_email" = ?[0m  [["buyer_email", "seco.monica@gmail.com"]]
+  [1m[35mBook Load (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered pages/_purchased.html.erb (15.6ms)
+  [1m[35mSale Load (0.0ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."seller_email" = ?  [["seller_email", "seco.monica@gmail.com"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered pages/_sales.html.erb (15.6ms)
+  Rendered pages/dashboard.html.erb within layouts/application (46.9ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 370ms (Views: 370.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-03-16 17:54:38 +0100
+Processing by PagesController#dashboard as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered pages/_books.html.erb (0.0ms)
+  [1m[35mSale Load (0.0ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."buyer_email" = ?  [["buyer_email", "seco.monica@gmail.com"]]
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mBook Load (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered pages/_purchased.html.erb (0.0ms)
+  [1m[36mSale Load (0.0ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."seller_email" = ?[0m  [["seller_email", "seco.monica@gmail.com"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered pages/_sales.html.erb (0.0ms)
+  Rendered pages/dashboard.html.erb within layouts/application (31.3ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 370ms (Views: 369.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for ::1 at 2015-03-16 17:54:41 +0100
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.0ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."availability" = 't'[0m
+  Rendered books/_book.html.erb (0.0ms)
+  Rendered books/index.html.erb within layouts/application (15.6ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 328ms (Views: 328.1ms | ActiveRecord: 0.0ms)
