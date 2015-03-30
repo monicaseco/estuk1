@@ -1,0 +1,5 @@
+export AWS_BUCKET=stuklearndev
+export AWS_ACCESS_KEY_ID=AKIAIADNIPQSX6JGOHRQ
+export AWS_SECRET_ACCESS_KEY=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
+export STRIPE_PUBLISHABLE_KEY=pk_test_hrss2YfolZWfxnPV1uWKIKSU
+export STRIPE_SECRET_KEY=sk_test_tXOerlnirqDyRzzMp3SdNb8I

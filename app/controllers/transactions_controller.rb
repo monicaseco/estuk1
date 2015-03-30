@@ -1,6 +1,6 @@
 class TransactionsController < ApplicationController
-	def create
-	
+  def create
+  
        book = Book.find_by!(slug: params[:slug])
        sale = book.sales.create(
           amount: book.price,
@@ -10,11 +10,11 @@ class TransactionsController < ApplicationController
        sale.process!
  
     if sale.finished?
-		redirect_to pickup_url(guid: sale.guid), notice: "Transaction Successful"
+    redirect_to pickup_url(guid: sale.guid), notice: "Transaction Successful"
     else
-		redirect_to book_path(book), notice: "Something went wrong"
+    redirect_to book_path(book), notice: "Something went wrong"
     end
-	
+  
 end
 
   def pickup
